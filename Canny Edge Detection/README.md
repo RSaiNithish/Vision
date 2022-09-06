@@ -34,21 +34,25 @@ Edge can be defined as Place of rapid change in intensity
 Gradient points the direction of the most rapid change in the intensity.
 
 **Gradient of an image is given by**:
+
 $$
 \nabla f = [\frac{\partial f}{\partial x} , \frac{\partial f}{\partial y}]
 $$
 
 **Gradient direction (Orientation of the edge normal) is given by**:
+
 $$
 \theta = tan ^{-1} [\frac{\partial f}{\partial x} / \frac{\partial f}{\partial y}]
 $$
 
 **Edge strength (Magnitude) is given by:**
+
 $$
 || \nabla f || = \sqrt{(\frac{\partial f}{\partial x})^2 + (\frac{\partial f}{\partial y})^2}
 $$
 
 We can approximate the partial derivative and one such approximation gives us Sobel Filter, which is widely used of edge detection, which is defined as:
+
 $$
 \begin{bmatrix}
 -1 & 0 & 1\\
@@ -56,6 +60,7 @@ $$
 -1 & 0 & 1\\
 \end{bmatrix}
 $$
+
 $$Sobel \space Filter$$
 
 **Few other first order derivative filters are**:
