@@ -2,7 +2,7 @@ import os
 import cv2
 import numpy as np
 
-def extract_frames(path):
+def extract_frames(path,frame_number=None):
     """This function will extract frames from a given video
 
     Args:
@@ -17,6 +17,9 @@ def extract_frames(path):
     frames = []
     while sucess:
         frame_count+=1
+        if frame_number:
+            if frame_number == frame_count:
+                return frame
         frames.append(frame)
         sucess,frame = video.read()
     return frames
